@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # Landing
+  root to: 'pages#the_batch'
+  # Pages
+  # get :the_batch, to: 'pages#the_batch'
+  get :the_numbers,  to: 'pages#the_numbers'
+  get :the_projects, to: 'pages#the_projects'
+  get :the_TAs,      to: 'pages#the_TAs'
+  get :quick_note,   to: 'pages#quick_note'
 end

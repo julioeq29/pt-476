@@ -1,4 +1,4 @@
 class PagesController < ApplicationController
-  def home
+  def the_batch
   end
 end

@@ -6,6 +6,16 @@
   height: 96vh;
   justify-content: space-between;
   padding-top: 1rem;
+  background-color: white;
+  border-radius: 12px;
+}
+
+@media (max-width: 1350px) {
+  .cards-students {
+    grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(80px, auto));
+    height: 90vh;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -20,7 +30,7 @@
   .cards-students {
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr;
-    // height: 1000vh;
+    height: 99%;
   }
 }
 

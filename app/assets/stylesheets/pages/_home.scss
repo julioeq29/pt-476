@@ -11,6 +11,11 @@ a {
   width: 100vw;
 }
 
+.red-content {
+  width: 100vw;
+  background-color: $red;
+}
+
 @media (max-width: 576px) {
   .wagon-container {
     flex-direction: column;
@@ -18,6 +23,7 @@ a {
 
   .main-content {
     height: 100%;
+    margin-top: 64px;
 
     h1 {
       font-size: 1.8rem;
@@ -26,6 +32,10 @@ a {
     h4 {
       font-size: 1rem;
     }
+  }
+
+  .red-content {
+    margin-top: 64px;
   }
 }
 

@@ -19,10 +19,10 @@
     <div class="d-flex wagon-container">
       <%= render 'pages/sidebar' %>
 
-      <% if params[:action] == 'the_batch' || params[:action] == 'quick_note' || params[:action] == 'the_students' %>
+      <% if params[:action] == 'the_batch' || params[:action] == 'quick_note' %>
         <div class="main-content p-3">
-      <% else %>
-        <div class="free-content p-3">
+      <% elsif params[:action] == 'the_students' %>
+        <div class="red-content">
       <% end %>
 
         <%= yield %>

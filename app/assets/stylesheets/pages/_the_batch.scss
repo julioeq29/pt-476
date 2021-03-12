@@ -30,6 +30,13 @@
   width: 400px;
 }
 
+@media (max-width: 1350px) {
+  .lw-logo-lg {
+    height: 200px;
+    width: 200px;
+  }
+}
+
 @media (max-width: 576px) {
   .lw-logo-lg {
     border: 5px solid white;

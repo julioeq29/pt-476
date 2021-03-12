@@ -1,7 +1,11 @@
+require 'nokogiri'
+require 'json'
+require 'open-uri'
+
+
 ############################################################
 ############## Getting GitHub Usernames ####################
 ############################################################
-require 'nokogiri'
 
 html_file = File.open('./public/batch_476.html')
 html_doc = Nokogiri::HTML(html_file)
@@ -15,10 +19,9 @@ html_doc.search('.col-12 a').each do |element|
   end
 end
 # puts students_array
+
 ############################################################
 ############################################################
-
-
 
 
 ############################################################
@@ -122,5 +125,28 @@ Student.create!(github: 'gtm19', project: project)
 
 project = Project.create!(name: 'batch 0')
 Student.create!(github: 'trock111jomy', project: project)
+
+############################################################
+############################################################
+
+
+############################################################
+################ Getting GitHub Avatars ####################
+############################################################
+
+Student.all.each do |s|
+  url = "https://api.github.com/users/#{s.github}"
+  s_serialized = open(url).read
+  s_info = JSON.parse(s_serialized)
+  s.avatar_url = s_info['avatar_url']
+  p s.avatar_url
+  s.name = s_info['name']
+  s.save
+  sleep 5
+end
+
+############################################################
+############################################################
+
 
 puts 'Seeded'

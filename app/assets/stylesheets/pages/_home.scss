@@ -10,3 +10,25 @@ a {
 .main-content {
   width: 100vw;
 }
+
+@media (max-width: 576px) {
+  .wagon-container {
+    flex-direction: column;
+  }
+
+  .main-content {
+    height: 100%;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+.free-content {
+  width: 100%;
+}

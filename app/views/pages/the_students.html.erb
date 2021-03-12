@@ -1,0 +1,14 @@
+<h1>The Students</h1>
+
+<div class="cards-students">
+  <% @students.each do |s| %>
+    <div class="card-student">
+      <%= image_tag s.avatar_url, class: 'avatar-bordered' %>
+      <% if s.name.nil? %>
+        <p class="m-0"><%= s.github %></p>
+      <% else %>
+        <p class="m-0"><%= s.name.split[0] %></p>
+      <% end %>
+    </div>
+  <% end %>
+</div>

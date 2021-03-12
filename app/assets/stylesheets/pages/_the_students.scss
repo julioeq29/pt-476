@@ -1,0 +1,22 @@
+.cards-students {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+  grid-template-rows: repeat(auto-fit, minmax(120px, auto));
+  // grid-template-rows: repeat(6, 184px);
+  grid-gap: 1rem;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: repeat(3, 1fr);
+  // width: 100vw;
+  height: 90vh;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.card-student {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 90%;
+  // max-height: 90%;
+}

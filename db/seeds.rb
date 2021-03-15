@@ -153,32 +153,54 @@ require 'open-uri'
 ################## Getting GitHub TAs ######################
 ############################################################
 
-puts 'Seeding TAs'
+# puts 'Seeding TAs'
 
-html_file = File.open('./public/calendar_476.html')
-html_doc = Nokogiri::HTML(html_file)
+# html_file = File.open('./public/calendar_476.html')
+# html_doc = Nokogiri::HTML(html_file)
 
-html_doc.search('.js-teacher-card').each do |element|
-  ta = Teacher.new()
-  ta_name = element.search('.calendar-card-info-teacher-link').text.strip
-  ta_avatar = element.search('.calendar-card-avatar img').attribute('src').value
-  ta.name = ta_name
-  ta.avatar_url = ta_avatar
+# html_doc.search('.js-teacher-card').each do |element|
+#   ta = Teacher.new()
+#   ta_name = element.search('.calendar-card-info-teacher-link').text.strip
+#   ta_avatar = element.search('.calendar-card-avatar img').attribute('src').value
+#   ta.name = ta_name
+#   ta.avatar_url = ta_avatar
 
-  ta_github = element.search('.calendar-card-info-teacher-link').attribute('href').value
-  unless ta_github.match(/^(\D(alumni)\D)(\S*)\//).nil?
-    match_data = ta_github.match(/^(\D(alumni)\D)(\S*)\//)
-    p match_data[3]
-    ta.github = match_data[3]
-  end
-  ta.save!
-end
+#   ta_github = element.search('.calendar-card-info-teacher-link').attribute('href').value
+#   unless ta_github.match(/^(\D(alumni)\D)(\S*)\//).nil?
+#     match_data = ta_github.match(/^(\D(alumni)\D)(\S*)\//)
+#     p match_data[3]
+#     ta.github = match_data[3]
+#   end
+#   ta.save!
+# end
 # puts ta_array
 
 ############################################################
 ############################################################
 
 
+############################################################
+################## Getting Staff ######################
+############################################################
+
+puts 'Seeding Staff'
+
+html_file = File.open('./public/staff_q1_21.html')
+html_doc = Nokogiri::HTML(html_file)
+
+html_doc.search('.city-staff .item').each do |element|
+  staff = Staff.new()
+  staff_name = element.search('.full-name').text.strip
+  unless staff_name.empty?
+    staff_avatar = element.search('.item-picture img').attribute('data-src').value
+    staff.name = staff_name
+    staff.avatar_url = staff_avatar
+    staff.save!
+  end
+end
+
+############################################################
+############################################################
 
 
 puts 'Seeded'

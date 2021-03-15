@@ -48,6 +48,12 @@
       &:nth-of-type(5) {
         animation-delay: .55s;
       }
+      &:nth-of-type(6) {
+        animation-delay: .65s;
+      }
+      &:nth-of-type(7) {
+        animation-delay: .75s;
+      }
     }
   }
   nav {
@@ -71,7 +77,7 @@
     li {
       display: block;
       height: 25%;
-      height: calc(100% / 4);
+      height: calc(100% / 6);
       min-height: 50px;
       position: relative;
       opacity: 0;

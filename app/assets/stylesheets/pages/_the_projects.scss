@@ -111,12 +111,11 @@
 .project-desc {
   p {
     font-size: 14px;
-    // opacity: .7;
     margin: 0;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .project-desc {
     p  {
       font-size: 12px;
@@ -132,7 +131,7 @@
   }
 
   .project-desc {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       p  {
       font-size: 14px;
     }

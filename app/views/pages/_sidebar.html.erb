@@ -10,6 +10,7 @@
 <div class="overlay" id="overlay">
   <nav class="overlay-menu">
     <ul>
+
       <li>
         <%= link_to root_path, class: "sidebar-link d-flex align-items-center" do %>
           <i class="fas fa-shuttle-van mr-5"></i>
@@ -21,6 +22,7 @@
           </div>
         <% end %>
       </li>
+
       <li>
         <%= link_to the_students_path, class: "sidebar-link d-flex align-items-center" do %>
           <i class="fas fa-graduation-cap mr-5"></i>
@@ -32,17 +34,7 @@
           </div>
         <% end %>
       </li>
-      <li>
-        <%= link_to the_numbers_path, class: "sidebar-link d-flex align-items-center" do %>
-          <i class="fab fa-slack-hash mr-5"></i>
-          <div class="d-flex align-items-center">
-            <% if active == 'the_numbers' %>
-              <span class="sidebar-active"><i class="fas fa-circle"></i></span>
-            <% end %>
-            <p class="ml-2 m-0">the numbers</p>
-          </div>
-        <% end %>
-      </li>
+
       <li>
         <%= link_to the_projects_path, class: "sidebar-link d-flex align-items-centers" do %>
           <i class="fas fa-rocket mr-5"></i>
@@ -54,14 +46,51 @@
           </div>
         <% end %>
       </li>
+
       <li>
-        <%= link_to quick_note_path, class: "sidebar-link d-flex align-items-center" do %>
-          <i class="fas fa-seedling mr-5"></i>
+        <%= link_to the_TAs_path, class: "sidebar-link d-flex align-items-centers" do %>
+          <i class="fas fa-user-astronaut mr-5"></i>
           <div class="d-flex align-items-center">
-            <% if active == 'quick_note' %>
+            <% if active == 'the_TAs' %>
               <span class="sidebar-active"><i class="fas fa-circle"></i></span>
             <% end %>
-            <p class="ml-2 m-0">quick note</p>
+            <p class="ml-2 m-0">the TAs</p>
+          </div>
+        <% end %>
+      </li>
+
+      <li>
+        <%= link_to the_numbers_path, class: "sidebar-link d-flex align-items-center" do %>
+          <i class="fab fa-slack-hash mr-5"></i>
+          <div class="d-flex align-items-center">
+            <% if active == 'the_numbers' %>
+              <span class="sidebar-active"><i class="fas fa-circle"></i></span>
+            <% end %>
+            <p class="ml-2 m-0">the numbers</p>
+          </div>
+        <% end %>
+      </li>
+
+      <li>
+        <%= link_to the_staff_path, class: "sidebar-link d-flex align-items-centers" do %>
+          <i class="fas fa-users mr-5"></i>
+          <div class="d-flex align-items-center">
+            <% if active == 'the_staff' %>
+              <span class="sidebar-active"><i class="fas fa-circle"></i></span>
+            <% end %>
+            <p class="ml-2 m-0">the staff</p>
+          </div>
+        <% end %>
+      </li>
+
+      <li>
+        <%= link_to final_note_path, class: "sidebar-link d-flex align-items-center" do %>
+          <i class="fas fa-seedling mr-5"></i>
+          <div class="d-flex align-items-center">
+            <% if active == 'final_note' %>
+              <span class="sidebar-active"><i class="fas fa-circle"></i></span>
+            <% end %>
+            <p class="ml-2 m-0">final note</p>
           </div>
         <% end %>
       </li>

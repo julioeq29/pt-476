@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def the_projects
+    @projects = Project.where.not(id: 11)
   end
 
   def quick_note

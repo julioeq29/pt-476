@@ -1,0 +1,27 @@
+.cards-staff {
+  padding: 3rem;
+}
+
+@media (max-width: 1350px) {
+  .staff-name {
+    bottom: 28px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards-staff {
+    grid-template-columns: repeat(auto-fit, minmax(110px, auto)) !important;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .cards-staff {
+    grid-template-columns: 1fr 1fr !important;
+    padding: 1rem;
+  }
+
+  .staff-name {
+    bottom: -8px !important;
+  }
+}

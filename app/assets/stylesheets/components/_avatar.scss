@@ -12,9 +12,33 @@
   box-shadow: 0 2px 12px rgba(0,0,0,0.2);
 }
 
+.avatar-teacher {
+  max-height: 180px;
+  max-width: 180px;
+  object-fit: cover;
+}
+
+@media (max-width: 1350px) {
+  .avatar-teacher {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .avatar-teacher {
+    max-height: 130px;
+    max-width: 130px;
+  }
+}
+
 @media (max-width: 576px) {
   .avatar-bordered {
     max-height: 144px;
+  }
+  .avatar-teacher {
+    max-height: 144px;
+    max-width: 144px;
   }
 }
 

@@ -13,7 +13,9 @@ class PagesController < ApplicationController
     @tas = Teacher.all
   end
 
-  def the_staff; end
+  def the_staff
+    @staff = Staff.all
+  end
 
   def the_numbers; end
 

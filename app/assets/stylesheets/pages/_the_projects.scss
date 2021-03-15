@@ -8,14 +8,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, auto));
   // grid-template-rows: repeat(auto-fit, minmax(120px, auto));
-  grid-gap: 32px;
+  grid-gap: 26px;
 }
 
 @media (max-width: 1380px) {
   .cards-projects {
     grid-template-columns: repeat(auto-fit, minmax(230px, auto));
     // grid-template-rows: repeat(auto-fit, minmax(80px, auto));
-    height: 90vh;
+    height: 92vh;
   }
 }
 
@@ -111,12 +111,11 @@
 .project-desc {
   p {
     font-size: 14px;
-    // opacity: .7;
     margin: 0;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .project-desc {
     p  {
       font-size: 12px;
@@ -132,7 +131,7 @@
   }
 
   .project-desc {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       p  {
       font-size: 14px;
     }

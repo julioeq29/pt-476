@@ -14,7 +14,7 @@
   .cards-students {
     grid-template-columns: repeat(auto-fit, minmax(130px, auto));
     grid-template-rows: repeat(auto-fit, minmax(80px, auto));
-    height: 90vh;
+    // height: 95vh;
   }
 }
 
@@ -22,7 +22,7 @@
   .cards-students {
     grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     grid-template-rows: repeat(auto-fit, minmax(80px, auto));
-    height: 90vh;
+    // height: 90vh;
   }
 }
 

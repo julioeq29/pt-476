@@ -1,0 +1,9 @@
+.cards-tas {
+  grid-template-columns: repeat(auto-fit, minmax(155px, auto));
+}
+
+@media (max-width: 1350px) {
+  .cards-tas {
+    grid-template-columns: repeat(auto-fit, minmax(110px, auto));
+  }
+}

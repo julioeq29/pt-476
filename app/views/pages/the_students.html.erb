@@ -1,5 +1,5 @@
 <div class="cards-students m-3 p-3">
-  <% @students.shuffle.each do |s| %>
+  <% @students.each do |s| %>
     <div class="card-student">
       <%= image_tag s.avatar_url, class: 'avatar-bordered' %>
         <% colour = ['pippin', 'old_lace', 'black_n_white', 'red'] %>

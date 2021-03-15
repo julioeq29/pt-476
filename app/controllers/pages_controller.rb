@@ -9,7 +9,9 @@ class PagesController < ApplicationController
     @projects = Project.where.not(id: 11)
   end
 
-  def the_TAs; end
+  def the_TAs
+    @tas = Teacher.all
+  end
 
   def the_staff; end
 

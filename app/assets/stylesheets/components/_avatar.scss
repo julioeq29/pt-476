@@ -7,9 +7,9 @@
 
 .avatar-bordered {
   height: 100%;
-  max-height: 200px;
+  max-height: 180px;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  box-shadow: 0px 10px 16px rgba(0,0,0,0.3);
 }
 
 .avatar-teacher {
@@ -37,7 +37,7 @@
     max-height: 144px;
   }
   .avatar-teacher {
-    max-height: 144px;
+    height: 144px;
     max-width: 144px;
   }
 }

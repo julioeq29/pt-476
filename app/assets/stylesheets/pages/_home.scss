@@ -16,6 +16,12 @@ a {
   background-color: $red;
 }
 
+.old_lace-content {
+  width: 100vw;
+  background-color: $pippin;
+  // padding: 32px;
+}
+
 @media (max-width: 576px) {
   .wagon-container {
     flex-direction: column;

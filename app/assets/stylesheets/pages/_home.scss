@@ -16,6 +16,12 @@ a {
   background-color: $red;
 }
 
+.white-content {
+  width: 100vw;
+  background-color: white;
+  // padding: 32px;
+}
+
 @media (max-width: 576px) {
   .wagon-container {
     flex-direction: column;

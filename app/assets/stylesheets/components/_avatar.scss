@@ -7,7 +7,7 @@
 
 .avatar-bordered {
   height: 100%;
-  max-height: 180px;
+  max-height: 140px;
   border-radius: 12px;
   box-shadow: 0px 10px 16px rgba(0,0,0,0.3);
 }
@@ -26,6 +26,9 @@
 }
 
 @media (max-width: 1024px) {
+  .avatar-bordered {
+    max-height: 110px;
+  }
   .avatar-teacher {
     max-height: 130px;
     max-width: 130px;
@@ -44,6 +47,6 @@
 
 @media (max-width: 370px) {
   .avatar-bordered {
-    max-height: 130px;
+    max-height: 114px;
   }
 }

@@ -1,7 +1,7 @@
 .cards-students {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, auto));
-  grid-template-rows: repeat(auto-fit, minmax(120px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  grid-template-rows: repeat(auto-fit, minmax(90px, auto));
   grid-gap: 1rem;
   height: 96vh;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 @media (max-width: 1024px) {
   .cards-students {
     grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-    grid-template-rows: repeat(auto-fit, minmax(80px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(56px, auto));
     // height: 90vh;
   }
 }

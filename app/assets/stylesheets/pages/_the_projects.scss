@@ -64,6 +64,13 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .card-project > img {
+    // height: 100px;
+    max-height: 60%;
+  }
+}
+
 @media (max-width: 576px) {
   .card-project > img {
     height: 200px;

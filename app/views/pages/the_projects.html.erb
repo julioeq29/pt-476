@@ -1,23 +1,7 @@
 <div class="projects-container m-3 p-3 bg-white">
-  <div class="cards-projects">
+  <div class="cards-projects" data-controller="modal">
     <% @projects.each do |project| %>
-      <% colour = ['pippin', 'old_lace', 'black_n_white', 'red'] %>
-      <div class="card-project">
-        <img src="https://images.unsplash.com/photo-1615773146406-277d9d3e7c2f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80.jpg" alt="">
-        <div class="card-project-info">
-          <div class="project-name <%= "#{colour.sample}" %>">
-            <p class="m-0"><%= project.name %></p>
-          </div>
-          <div class="project-desc p-3">
-            <div class="project-members mb-2">
-              <% project.students.each do |s| %>
-                <%= image_tag s.avatar_url, class: 's-avatar-bordered'  %>
-              <% end %>
-            </div>
-            <p class="proj-desc-short"><%= project.description %></p>
-          </div>
-        </div>
-      </div>
+      <%= render 'pages/project', project: project %>
     <% end %>
   </div>
 </div>

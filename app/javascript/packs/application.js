@@ -34,3 +34,5 @@ activateSideBar();
 //   console.log('after turbolinks');
 // });
 
+
+import "controllers"

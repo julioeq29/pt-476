@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # Landing
   root to: 'pages#the_batch'
   # Pages
+  resources :pages, only: :show
   # get :the_batch, to: 'pages#the_batch'
   get :the_students, to: 'pages#the_students'
   get :the_projects, to: 'pages#the_projects'

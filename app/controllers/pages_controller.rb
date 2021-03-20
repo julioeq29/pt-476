@@ -17,6 +17,11 @@ class PagesController < ApplicationController
     @staff = Staff.all
   end
 
+  def show
+    @project = Project.find(params[:id])
+    render partial: 'pages/show', locals: { project: @project }
+  end
+
   def the_numbers; end
 
   def quick_note; end

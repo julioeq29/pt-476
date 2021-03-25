@@ -10,8 +10,9 @@
 }
 
 .project-students {
+  margin-top: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 }
 
@@ -27,4 +28,11 @@
     color: white;
     text-decoration: none;
   }
+}
+
+.proj-desc-color {
+  background-color: $pippin;
+  padding: 24px;
+  border-radius: 20px 4px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
 }

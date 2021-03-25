@@ -14,12 +14,19 @@ a {
 .red-content {
   width: 100vw;
   background-color: $red;
+  // max-width: 1700px;
 }
 
 .old_lace-content {
   width: 100vw;
   background-color: $red;
+  // max-width: 1700px;
   // padding: 32px;
+}
+
+.big-box {
+  max-width: 1500px;
+  margin: auto;
 }
 
 @media (max-width: 576px) {

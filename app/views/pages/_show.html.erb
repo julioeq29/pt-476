@@ -8,15 +8,19 @@
 
   <div class="row my-3">
     <div class="col-12 modal-image">
-      <img src="https://images.unsplash.com/photo-1615773146406-277d9d3e7c2f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80.jpg" alt="">
+      <% if project.photo_url.present? %>
+        <%= image_tag project.photo_url %>
+      <% end %>
     </div>
     <div class="col-12 mt-5">
-      <p class=""><%= project.description %></p>
+      <div class="proj-desc-color">
+        <p class=""><%= project.description %></p>
+      </div>
       <div class="project-students mb-2">
         <% project.students.each do |s| %>
           <div class="">
             <%= image_tag s.avatar_url, class: 's-avatar-bordered'  %>
-            <p class=""><%= s.name.split[0].capitalize %></p>
+            <p class=""><strong><%= s.name.split[0].capitalize %></strong></p>
           </div>
         <% end %>
       </div>

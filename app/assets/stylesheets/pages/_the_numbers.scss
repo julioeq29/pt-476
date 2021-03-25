@@ -1,11 +1,17 @@
 .numbers {
-  height: 96%;
+  height: 96vh;
   // width: 100%;
   text-align: end;
   // padding: 32px;
   border-radius: 12px;
   background-color: #f4f4f4;
   // box-shadow: 0px 10px 16px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 576px) {
+  .numbers {
+    height: unset;
+  }
 }
 
 .n-pippin {

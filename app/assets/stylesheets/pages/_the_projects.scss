@@ -75,19 +75,19 @@
 }
 
 @media (max-width: 1380px) {
-  .card-project > img {
+  .project-show-img > img {
     height: 140px;
   }
 }
 
 @media (max-width: 1200px) {
-  .card-project > img {
+  .project-show-img > img {
     height: 100px;
   }
 }
 
 @media (max-width: 1024px) {
-  .card-project > img {
+  .project-show-img > img {
     // height: 100px;
     max-height: 60%;
   }
@@ -97,7 +97,7 @@
   .card-project {
     height: 340px;
   }
-  .card-project > img {
+  .project-show-img > img {
     height: 200px;
   }
 }

@@ -4,7 +4,9 @@
   >
   <% colour = ['pippin', 'old_lace', 'black_n_white', 'red'] %>
   <% if project.photo_url.present? %>
-    <%= image_tag project.photo_url %>
+    <div class="project-show-img">
+      <%= image_tag project.photo_url %>
+    </div>
   <% end %>
   <div class="card-project-info">
     <div class="project-name <%= "#{colour.sample}" %>">

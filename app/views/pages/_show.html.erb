@@ -1,10 +1,12 @@
 <div class="container-fluid modal-margin">
   <div class="py-3 d-flex align-items-center justify-content-between">
-    <h3><%= project.name %></h3>
+    <h3 class="m-0"><strong><%= project.name %></strong></h3>
     <%= link_to project.url, class: 'project-modal-name', target: 'blank' do %>
       <p class="m-0">Visit www project</p>
     <% end %>
   </div>
+
+  <hr>
 
   <div class="row my-3">
     <div class="col-12 modal-image">

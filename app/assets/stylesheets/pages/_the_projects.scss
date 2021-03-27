@@ -12,7 +12,7 @@
 
 .cards-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(302px, auto));
   // grid-template-rows: repeat(auto-fit, minmax(120px, auto));
   grid-gap: 20px;
   // max-width: 1600px;
@@ -63,7 +63,7 @@
 }
 
 .project-show-img > img {
-  height: 180px;
+  height: 170px;
   object-fit: cover;
   width: 100%;
   border-radius: 4px;
